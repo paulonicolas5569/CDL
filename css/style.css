@@ -80,7 +80,7 @@ a {
     justify-content: center;
     align-items: center;
     color: #eee;
-    background: url('/img/carro-a.png') no-repeat center center/cover;
+    background: url('./img/carro-a.png') no-repeat center center/cover;
 
     /* Sobreposição */
     background-color: rgba(0,0,0,0.5);
