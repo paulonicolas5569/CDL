@@ -1,3 +1,5 @@
+![W3C Validation](https://img.shields.io/w3c-validation/html?targetUrl=https%3A%2F%2Fvalidator.w3.org%2Fnu%2F%23textarea)
+
 # CDL
 
 <p>
@@ -15,3 +17,4 @@
         alt="CSS válido!" />
     </a>
 </p>
+
