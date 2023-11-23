@@ -41,13 +41,57 @@ a {
     letter-spacing: 2px;
 }
 
+/* menu */
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+}
 /* Navbar */
+
+#check {
+    display: none;
+}
+
+label {
+    font-size: 3em;
+    position: fixed;
+    top: 5px;
+    right: 15px;
+    color: rgba(243, 234, 234, 0.5);
+}
+
+nav ul {
+    list-style: none;
+    background: var(--cor3);
+    height: 100vh;
+    position: fixed;
+    top: 60px;
+    right: -100%;
+    width: 100%;
+    transition: all 0.5s;
+}
+
+#check:checked~ul {
+    right: 0;
+    transition: 1s;
+}
+
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid var(--cor1);
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--cor2);
+}
 #navbar {
     width: 100%;
     background: #111;
     color: #eee;
     height: 80px;
-    position: fixed;
+    position: 0;
 }
 
 #navbar-container {
@@ -57,10 +101,20 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
 }
 
 .logo {
     font-size: 2rem;
+}
+
+#check {
+    display: none;
+}
+
+#check:checked~ul {
+    right: 0;
+    transition: 1s;
 }
 
 #navbar-items {
@@ -80,7 +134,7 @@ a {
     justify-content: center;
     align-items: center;
     color: #eee;
-    background: url('./img/carro-a.png') no-repeat center center/cover;
+    background: url('/img/banner-bmw.png.jpg') no-repeat center center/cover;
 
     /* Sobreposição */
     background-color: rgba(0,0,0,0.5);
@@ -248,3 +302,5 @@ a {
     text-align: center;
     flex-direction: row-reverse;
 }
+
+
