@@ -53,6 +53,30 @@ a {
     display: none;
 }
 
+
+label {
+    display: none;
+}
+
+/* Adiciona uma regra para exibir o ícone apenas em dispositivos móveis com largura de tela até 768 pixels (ou ajuste conforme necessário) */
+@media only screen and (max-width: 768px) {
+    label {
+        display: block;
+    }
+
+    #navbar-items {
+        display: none; /* Adiciona esta linha para ocultar o menu principal em dispositivos móveis */
+    }
+
+    #check:checked~ul {
+        right: 0;
+        transition: 1s;
+    }
+
+    nav ul {
+        right: 0; /* Adiciona esta linha para garantir que o menu esteja visível em dispositivos móveis */
+    }
+}
 label {
     font-size: 3em;
     position: fixed;
@@ -63,7 +87,7 @@ label {
 
 nav ul {
     list-style: none;
-    background: var(--cor3);
+    background: #000;
     height: 100vh;
     position: fixed;
     top: 60px;
@@ -103,6 +127,7 @@ nav ul li a {
     align-items: center;
     
 }
+
 
 .logo {
     font-size: 2rem;
