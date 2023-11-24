@@ -120,6 +120,22 @@
             <img src="./img/carro-h.png" alt="" class="gallery-image">
         </div>
     </section>
+    <script>
+        // Adiciona um evento de clique aos itens do menu para fechar o menu quando um item é clicado
+        var itensMenu = document.querySelectorAll('#navbar-items li a');
+        itensMenu.forEach(function(item) {
+            item.addEventListener('click', function() {
+                // Fecha o menu definindo a propriedade 'checked' do checkbox como false
+                document.getElementById('check').checked = false;
+            });
+        });
+
+        // Adiciona um evento de clique ao ícone do hamburguer para fechar o menu quando um item específico, como "Sobre", é clicado
+        var linkSobre = document.getElementById('sobre-link');
+        linkSobre.addEventListener('click', function() {
+            document.getElementById('check').checked = false;
+        });
+    </script>
 
     <section id="contato">
         <h3>Contato</h3>
